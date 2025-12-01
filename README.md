@@ -1,5 +1,6 @@
 # Nginx-Security-conf
 🔹 Nginx 安全架構圖
+```
 NGINX 主配置 (nginx.conf)
 ├── http{} 全域區塊
 │ ├── include /etc/nginx/conf.d/security.conf
@@ -26,7 +27,7 @@ NGINX 主配置 (nginx.conf)
 │ │ └─ location ~ /.(git|svn|env)$ { deny all; } # 隱藏敏感檔案
 │ └── location / { ... } # 原本站點的路徑設定
 └── events {} # 保留 Nginx 原始設定
-
+```
 
 
 ---
